@@ -26,7 +26,7 @@ namespace strange.examples.strangerocks.ui
 					RaycastHit hit;
 					if (Physics.Raycast (ray, out hit))
 					{
-						if (hit.collider == collider)
+						if (hit.collider == GetComponent<Collider>())
 						{
 							if (touch.phase == TouchPhase.Began)
 							{
